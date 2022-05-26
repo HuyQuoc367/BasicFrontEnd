@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>Thêm jquery vào Website</h1>
+    <a href="">Bấm vào tô màu</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore qui culpa itaque. Nesciunt aperiam voluptatum
+        aut error omnis consequatur et commodi dolor, aspernatur impedit earum pariatur unde quidem nihil praesentium?
+    </p>
+    <p>Esse eligendi dicta cupiditate quia praesentium, laboriosam expedita autem at maxime ducimus voluptatum eaque
+        numquam, excepturi sed odit vel ab adipisci est! Recusandae iste mollitia modi optio provident velit ut?</p>
+    <p>Molestias assumenda quas animi placeat iusto ex excepturi harum possimus, debitis cumque itaque maiores suscipit
+        nemo? Amet autem aspernatur veniam soluta laboriosam quae explicabo laudantium ad, minima inventore numquam
+        consequatur.</p>
+    <p>Saepe impedit quidem velit eaque ducimus nostrum aut sint aspernatur! Vel eum, eaque doloribus corporis
+        perspiciatis animi quasi aperiam voluptatibus aut, obcaecati, sed est hic id expedita. Pariatur, esse optio.</p> -->
+    Số a:<input type="text" name="txtA" id="txtA" value=""><br>
+    Số b:<input type="text" name="txtB" id="txtB" value=""><br>
+    <button type="button" name="btnCong" id="btnCong">Cộng</button>
+    <input type="text" name="txtKq" id="txtKq" value="">
+    <script>
+        // $(document).ready(function(){
+        //     $('a').click(function(){
+        //         $('p').css('color', 'red');
+        //         return false;
+        //     });
+        // });
+        $(document).ready(function(){
+            $('#btnCong').click(function(){
+                var a = parseFloat($('#txtA').val());
+                var b = parseFloat($('#txtB').val());
+                var kq = a + b;
+                $('#txtKq').attr('value', kq);
+            });
+        });
+    </script>
+</body>
+
+</html>

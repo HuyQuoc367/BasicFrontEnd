@@ -1,0 +1,35 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.link-text {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: rgb(175, 172, 172);
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+}
+.link-text::after {
+    content: "";
+    height: 3px;
+    transform: scaleX(0);
+    width: 100%;
+    background: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: all 250ms ease;
+}
+.link-text:hover::after {
+    /* height: 3px; */
+    transform: scaleX(1);
+}
+.link-text:hover {
+    color: rgb(104, 102, 102);
+}

@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.boxed{
+    width: 50px;
+    height: 50px;
+    background: black;
+}
+.boxed2{
+    /* margin-top: 20px; */
+    transform: translateY(-20px);
+    background: red;
+}
+.boxed1{
+    /* margin-bottom: 20px; */
+    transform: translateY(20px);
+}
+.avatars{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: 0 0 0 2px #fff;
+}
+/* khong nen dung */
+/* .avatar:nth-child(2){
+    transform: translateX(-10px);
+}
+.avatar:nth-child(3){
+    transform: translateX(-20px);
+}
+.avatar:nth-child(4){
+    transform: translateX(-30px);
+} */
+/* dung margin-left */
+.avatar:not(:first-child){
+    margin-left: -10px;
+}
+.avatar-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f2f5;
+}

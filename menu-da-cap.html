@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menu-da-cap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <nav id="container">
+                <a href="" id="logo"><img src="imgs/logo.png" alt=""></a>
+                <ul id="main-menu">
+                    <li><a href="">About</a></li>
+                    <li><a href="">Html</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Menu 2.1</a></li>
+                            <li><a href="">Menu 2.2</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Menu 2.2.1</a></li>
+                                    <li><a href="">Menu 2.2.2</a></li>
+                                    <li><a href="">Menu 2.2.3</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="">Menu 2.2.1</a></li>
+                                            <li><a href="">Menu 2.2.2</a></li>
+                                            <li><a href="">Menu 2.2.3</a></li>
+                                            <li><a href="">Menu 2.2.4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">Menu 2.2.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Menu 2.3</a></li>
+                            <li><a href="">Menu 2.4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Css</a></li>
+                    <li><a href="">Php</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Menu 2.1</a></li>
+                            <li><a href="">Menu 2.2</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Menu 2.2.1</a></li>
+                                    <li><a href="">Menu 2.2.2</a></li>
+                                    <li><a href="">Menu 2.2.3</a></li>
+                                    <li><a href="">Menu 2.2.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Menu 2.3</a></li>
+                            <li><a href="">Menu 2.4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Laravel</a></li>
+                    <li><a href="">Boostrap</a></li>
+                    <li><a href="">Javascript</a>
+                        <ul class="sub-menu">
+                            <li><a href="">Menu 2.1</a></li>
+                            <li><a href="">Menu 2.2</a>
+                                <ul class="sub-menu">
+                                    <li><a href="">Menu 2.2.1</a></li>
+                                    <li><a href="">Menu 2.2.2</a></li>
+                                    <li><a href="">Menu 2.2.3</a></li>
+                                    <li><a href="">Menu 2.2.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Menu 2.3</a></li>
+                            <li><a href="">Menu 2.4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.sub-menu').parent('li').addClass('has-child');
+        });
+    </script>
+</body>
+
+</html>

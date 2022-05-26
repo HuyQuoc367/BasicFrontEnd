@@ -1,0 +1,43 @@
+body {
+    padding: 0px;
+    margin: 0px; 
+}
+
+#wrapper {
+    background: rgb(134, 134, 134);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.list-button .button {
+    padding: 8px 16px; 
+    background: white;
+    text-decoration: none;
+    border-radius: 20px;
+    display: block;
+    transition: all 250ms ease; 
+}
+.list-button .button.messenger:hover {
+    background: #0770b6;
+    color: #ffff;
+}
+
+.list-button .button.messenger {
+    background: #0099FF;
+    color: #ffff;
+}
+/* .list-button .button.youtube {
+    background: #CD201F;
+    color: #ffff;
+} */
+.list-button .button.youtube:hover {
+    background: #a70606;
+    color: #ffff;
+}

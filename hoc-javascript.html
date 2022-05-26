@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="js/ham-tien-ich.js"></script>
+
+    <script>
+            //document.write('Bình phương của 2 là:' + tinhBinhPhuong(2));
+            //document.write('Bình phương của 4 là:' + tinhBinhPhuong(4));
+            // var dsSinhVien = ['Huy', 'An', 'Hòa'];
+            // document.write('Tên Sinh Viên thứ 2 là :' + dsSinhVien[1]);
+            //document.write('Tên của bạn: ' + ten);
+            // var a = parseFloat( prompt('Vui lòng nhập a:'));
+            // var b = parseFloat( prompt('Vui lòng nhập b:'));
+            // document.write('A + B = ' + (a+b) );
+
+            // var tong = a + b;
+            // var hieu = a - b;
+            // var tich = a * b;
+            // var thuong = a / b;
+            // var mod = a % b;
+            // document.write('Tổng là: ' + tong + '<br />');
+            // document.write('Hiệu là: ' + hieu + '<br />');
+            // document.write('Tích là: ' + tich + '<br />');
+            // document.write('Thương là: ' + thuong + '<br />');
+            // document.write('Chia lấy dư là: ' + mod + '<br />');
+
+            // document.write('Gia trị của a hiện tại là: ' + a++ + '<br />');
+            // document.write('Gia trị của a sau dòng code 31 là: ' + a + '<br />');
+            // document.write('Gia trị của a hiện tại là: ' + ++a + '<br />');
+            // document.write('Gia trị của a sau dòng code 33 là: ' + a + '<br />');
+            // var kq = ++b * b++;
+            // document.write(kq);
+
+            // Objects 
+            // let emailKey = 'email';
+            // let huy = {
+            //     ten: 'Phan quoc huy',
+            //     'tuoi': 23, /* nếu đặt tên trùng với tên được định nghĩa, ta có thể biến nó thành chuỗi */
+            //     depTrai : true,
+            //     hoc : function() {
+            //         document.write('Huy dang hoc');
+            //     },
+            //     [emailKey]: 'huy@gmail.com' /* nếu không có [] nó sẽ hiểu là emailKey là key chứ k phải email như mong muốn*/
+            // };
+            // document.write(huy.email); /* đặc biệt key lấy từ biến emailKey, ta tạo đc cặp key value từ biến */
+            // document.write(huy['tuoi']); /* có thể truyền nó là chuỗi để lấy key như vầy trong một số trường hợp đặc biệt */
+            // huy.hoc();
+
+            // Objects constructor
+            // function User(firstName, lastName, avatar){ /* viết hoa chữ cái đầu Objects constructor, không bắt buộc nhưng quy ước chung */
+            //     this.firstName = firstName;
+            //     this.lastName = lastName;
+            //     this.avatar = avatar;
+            //     this.getName = function(){
+            //         return `${this.firstName} ${this.lastName}`; /* template string es6 */
+            //     }
+            // }
+            // var author = new User('Phan', 'Huy', 'Avatar');
+            // author.title = 'Developer'
+            // console.log(author);
+            // console.log(author.getName());
+            // console.log(`Tôi là: ${author.getName()}`);
+            // console.log(`Tôi là: ${author.firstName} ${author.lastName}`);
+
+            // Objects prototype
+            function User(firstName, lastName, avatar){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.avatar = avatar;
+                this.getName = function(){
+                    return `${this.firstName} ${this.lastName}`; /* template string es6 */
+                }
+            }
+            User.prototype.className = 'F8';
+            User.prototype.getClassName = function(){
+                return this.className;
+            };
+            var author = new User('Phan', 'Huy', 'Avatar');
+            // var author2 = new User('Phan2', 'Huy2', 'Avatar2');
+            console.log(author.getClassName());
+
+            // String
+            // let cauChao = 'Hello cac ban minh la Huy';
+            // document.write(cauChao.length + '<br />');   
+            // document.write(cauChao.split(' ') + '<br />');
+            // document.write(cauChao.substring(6, 9) + '<br />');
+            // document.write(cauChao.substring(6) + '<br />');
+            // document.write(cauChao.includes('HUY') + '<br />');   
+
+            // array
+            // const traiCay = new Array(3);
+            // traiCay[0] = 'nhan';
+            // traiCay[1] = 'xoai';
+            // traiCay[2] = 'buoi';
+            // console.log(traiCay);
+            // document.write(traiCay);
+
+            // for
+            // const traiCay = ['nhan', 'xoai', 'buoi'];
+            // for (const trai of traiCay) {
+            //     document.write(trai + '<br />');
+            // }
+    </script>
+</head>
+
+<body>
+  
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myString = 'Hoc JS tai JS FB!';
+        var myString2 = '  Hoc JS tai JS FB!   ';
+        // find index
+        // console.log(myString.indexOf('JS'));
+        // console.log(myString.indexOf('JS', 6)); /* tìm vị trí JS thứ 2 thì đưa vị trí sau JS 1 */
+        // console.log(myString.lastIndexOf('JS'));
+        // console.log(myString.search('JS')); /* khác với indexOf là k có postion, và tìm bằng biểu thức chính quy(partern) */
+
+        // cut String
+        // console.log(myString.slice(4, 6)); 
+        // console.log(myString.slice(4));
+        // console.log(myString.slice(-3, -1));
+        // console.log(myString)
+
+        // replace
+        // console.log(myString.replace('JS', 'Java')); /* Chỉ thay thế chữ đầu tiên */
+        console.log(myString.replace(/JS/g, 'Java')); /* Thay thế tất cả */
+
+        // uppercase lowercase
+        // console.log(myString.toUpperCase());
+        // console.log(myString.toLowerCase());
+        
+        // trim
+        // console.log(myString2.trim().length); /* loại bỏ khoảng trắng 2 đầu */
+        // console.log(myString2.length); 
+
+        // split
+        // console.log(myString.split(' ')); /* cắt chuỗi thành array dựa vào điểm chung */
+
+        // get character by index
+        // console.log(myString.charAt(0)); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+.wrapper{
+    width: 100%;
+    height: 400px;
+    background: #ccc;
+    position: relative;
+}
+.boxed{
+    /* display: inline-block; */
+    width: 100px;
+    height: 100px;
+    /* margin: 0 auto; */
+    background: blue;
+    position: relative;
+    /* top: 50px; */
+    /* left: 50%;
+    transform: translateY(-50%); */
+}
+.boxed21{
+    position: absolute;
+    /* z-index: 3; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dropdown{
+    width: 300px;
+    font-size: 16px;
+    margin-top: 50px;
+    position: relative;
+}
+.dropdown-select{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dropdown-list{
+    border: 1px solid #eee;
+    /* margin-top: 20px; */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 3;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    /* Transiton không áp dụng được cho display: none; */
+    transition: all 0.9s ease;
+}
+.dropdown-item{
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-list{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+}
